@@ -1,0 +1,27 @@
+---
+title: "BioCmeetups Map"
+author: ""
+date: 2018-07-27
+categories: ["events"]
+tags: ["map", "meetup"]
+---
+
+```{r setup, include=FALSE}
+require("leaflet")
+require("maps")
+data("world.cities")
+```
+
+# BioCmeetups Map
+
+```{r echo=FALSE}
+meetups.cities <- read.table(file="../../data/cities.tsv", header=TRUE, sep="\t", quote="")
+idx <- which( ((world.cities$name %in% meetups.cities$name) & 
+                (world.cities$country.etc %in% meetups.cities$country)))
+
+meetups.cities.coord <- world.cities[idx,]
+
+m <- leaflet(meetups.cities.coord) %>% addTiles() %>%
+    addMarkers(~long, ~lat, popup=~name)
+m 
+```

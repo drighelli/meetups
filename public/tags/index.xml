@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on BioCmeetups</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on BioCmeetups</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Map</title>
+      <link>/tags/map/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meetup</title>
+      <link>/tags/meetup/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/meetup/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
